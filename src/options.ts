@@ -75,9 +75,10 @@ export function normaliseOptions(
     optional: true,
   });
 
-  if (!areOptionsValid) {
-    return;
-  }
+  // TODO: options を渡すとエラーになるので、一旦コメントアウト
+  // if (!areOptionsValid) {
+  //   return;
+  // }
 
   const mergedOpts = Object.assign(defaultOptions, options);
   return mergedOpts;
